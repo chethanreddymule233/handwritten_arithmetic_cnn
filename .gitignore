@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Local datasets and test images
+data/
+handwritten_test/
+handwritten_test_expression.png
+
+# Old app versions and backups
+app_before_crop_debug.py
+app_before_handwritten_x.py
+backups/
+
+# External handwritten-symbol dataset
+bhmsds/
