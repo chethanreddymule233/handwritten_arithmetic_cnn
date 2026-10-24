@@ -190,3 +190,15 @@ The `artifacts/` directory contains the classification reports, confusion matric
 ### Operator Confusion Matrix
 
 ![Operator Confusion Matrix](artifacts/operator_confusion_matrix.png)
+
+## Application Screenshots
+
+### Application Interface
+![Application Interface](screenshots/interface.jpeg)
+
+### Single Expression Recognition
+![Single Expression Recognition](screenshots/single_output.jpeg)
+
+### Vertical Expression Recognition
+![Vertical Expression Recognition](screenshots/vertical_output.jpeg)
+
