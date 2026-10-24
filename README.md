@@ -191,19 +191,6 @@ The `artifacts/` directory contains the classification reports, confusion matric
 
 ![Operator Confusion Matrix](artifacts/operator_confusion_matrix.png)
 
-
-## Features
-
-- **Custom CNN architecture:** Built and trained a convolutional neural network for handwritten arithmetic symbol classification.
-- **Digit and operator recognition:** Classifies digits (0–9) and supported arithmetic operators (+, −, ×, ÷).
-- **Image preprocessing and segmentation:** Uses OpenCV to process uploaded images and separate individual symbols for classification.
-- **Confidence scores:** Displays the model's prediction confidence for recognized symbols.
-- **Expression reconstruction:** Combines classified symbols to reconstruct the arithmetic expression.
-- **Arithmetic evaluation:** Calculates the result of the recognized expression.
-- **Interactive web interface:** Uses Streamlit to upload handwritten expression images and display recognition results.
-- **Model evaluation:** Includes classification reports and evaluation plots for digit and operator recognition.
-
-
 ## Workflow
 
 1. **Upload Image:** Upload an image containing a handwritten arithmetic expression through the Streamlit interface.
@@ -213,16 +200,6 @@ The `artifacts/` directory contains the classification reports, confusion matric
 5. **Expression Reconstruction:** Combine the predicted symbols to form the arithmetic expression.
 6. **Result Calculation:** Evaluate the reconstructed expression and display the calculated result.
 7. **Prediction Visualization:** Display the recognition results and symbol-level confidence scores in the application.
-
-## Limitations
-
-- **Handwriting Variability:** Recognition accuracy depends on handwriting style, symbol clarity, and image quality.
-- **Segmentation Errors:** Overlapping, connected, or poorly spaced symbols may be segmented incorrectly.
-- **Classification Errors:** The CNN may misclassify ambiguous digits or arithmetic operators.
-- **Error Propagation:** An incorrect symbol prediction can cause the reconstructed expression and final answer to be incorrect.
-- **Supported Symbols:** Recognition is limited to the digits and arithmetic operators supported by the trained models.
-- **Input Format:** Performance depends on the image layout and preprocessing pipeline supported by the application.
-- **No Guaranteed Correctness:** The displayed arithmetic result is calculated from the recognized expression and may not match the intended handwritten expression.
 
 
 ### 1. Application Interface
