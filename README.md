@@ -139,3 +139,54 @@ Useful evaluation measures include:
 - NumPy
 - Torchvision
 
+## Model Performance
+
+The custom CNN was evaluated separately for handwritten digit classification and arithmetic-operator classification.
+
+### Digit Classification
+
+Evaluated on 10,000 test samples covering digits 0–9.
+
+| Metric | Score |
+|---|---:|
+| Micro Precision | 98% |
+| Micro Recall | 98% |
+| Micro F1-score | 98% |
+| Macro Precision | 98% |
+| Macro Recall | 98% |
+| Macro F1-score | 98% |
+| Weighted F1-score | 98% |
+
+*Scores are reported at the precision shown in the classification report.*
+
+### Arithmetic-Operator Classification
+
+Evaluated on 4,000 test samples, with 1,000 samples per operator.
+
+| Metric | Score |
+|---|---:|
+| Accuracy | 99.60% |
+| Macro Precision | 99.61% |
+| Macro Recall | 99.60% |
+| Macro F1-score | 99.60% |
+| Weighted F1-score | 99.61% |
+
+The evaluated operators are addition (`+`), subtraction (`-`), multiplication (`x`), and division (`/`).
+
+### Evaluation Visualizations
+
+The `artifacts/` directory contains the classification reports, confusion matrices, training curves, and sample visualizations used to inspect model performance.
+
+**Note:** These results measure individual symbol classification. They should not be interpreted as complete handwritten-expression recognition accuracy or end-to-end arithmetic-solving accuracy.
+
+### Training Curves
+
+![Training Curves](artifacts/training_curves.png)
+
+### Digit Confusion Matrix
+
+![Digit Confusion Matrix](artifacts/digit_confusion_matrix.png)
+
+### Operator Confusion Matrix
+
+![Operator Confusion Matrix](artifacts/operator_confusion_matrix.png)
