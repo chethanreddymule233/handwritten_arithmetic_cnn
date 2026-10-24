@@ -201,4 +201,3 @@ The `artifacts/` directory contains the classification reports, confusion matric
 
 ### Vertical Expression Recognition
 ![Vertical Expression Recognition](screenshots/vertical_output.jpeg)
-
